@@ -20,7 +20,7 @@ def main():
     while True:
         timeline = api.GetFriendsTimeline()
         for tweet in timeline:
-            if tweet.user.screen_name in (u'pika_shi', u'petitviolet')\
+            if tweet.user.screen_name in (u'pika_shi', u'petitviolet', u'krrrr38')\
                and u'エアコン付けて' in tweet.text and tweet.id > id:
                 com.write('1')
                 api.PostUpdate(status='@pika_shi 付けたで'.decode("utf-8"),
